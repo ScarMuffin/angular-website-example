@@ -10,5 +10,5 @@ jobs:
       -
         name: Login to Docker Hub
         env:
-          DOCKER_TOKEN: ${{ env.DOCKER_TOKEN }}
-        run: echo ${{ secrets.DOCKER_TOKEN }} | docker login -u ${{ secrets.DOCKER_USERNAME }} --password-stdin
+          DOCKER_TOKEN: ${{ env.DOCKERHUB_TOKENDOCKERHUB_TOKEN }}
+        run: echo ${{ secrets.DOCKERHUB_TOKEN }} | docker login -u ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin
